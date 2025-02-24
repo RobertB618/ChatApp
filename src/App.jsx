@@ -2,11 +2,12 @@ import List from './components/list/List'
 import Chat from './components/chat/Chat'
 import Detail from './components/detail/Detail'
 import Login from './components/login/Login'
+import Notification from './components/notification/notification'
 
 
 const App = () => {
 
-    const user = false
+    const user = false;
 
   return (
     <div className='container'>
@@ -17,11 +18,11 @@ const App = () => {
             <Chat/>
             <Detail/>
         </>
-              ) :( <Login/>)
+        ) :( 
 
-}
-         
-      
+        <Login/>
+        )}
+        <Notification/>
     </div>
   )
 }
