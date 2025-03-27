@@ -29,7 +29,7 @@ const App = () => {
  
     return (
     <div className='container'>
-     {currentUser ? (
+       {currentUser ? (
         <>
             <List/>
             {chatId && <Chat/>}
@@ -38,7 +38,7 @@ const App = () => {
         ) : ( 
           <Login/>
         )}
-        <Notification/>
+        <Notification/> 
     </div>
   );
 };
@@ -46,12 +46,15 @@ const App = () => {
 export default App
 
 /*{
-  user ? (
-    <>
-    <List/>
-    <Chat/>
-    <Detail/>
-    </>
-    )    :( <Login/>)
+   {currentUser ? (
+        <>
+            <List/>
+            {chatId && <Chat/>}
+            {chatId && <Detail/>}
+        </>
+        ) : ( 
+          <Login/>
+        )}
+        <Notification/> 
 
 } */
