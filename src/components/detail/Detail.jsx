@@ -13,7 +13,7 @@ const Detail = () => {
   const handleBlock = async () => { 
     if (!user) return;
 
-    const userDocRef = doc(db, currentUser.id);
+    const userDocRef = doc(db, "users", currentUser.id);
 
     try{
       await updateDoc(userDocRef,{
@@ -92,7 +92,11 @@ const Detail = () => {
           </div>
         </div>
         <button onClick={handleBlock}>{
-          isCurrentUserBlocked ? "you are blocked" : isReceiverBlocked ? "user blocked" : "block user"
+          isCurrentUserBlocked 
+          ? "you are blocked" 
+          : isReceiverBlocked 
+          ? "user blocked" 
+          : "block user"
         }</button>
         <button className="logout" onClick={()=>auth.signOut()}>logout</button>
       </div>

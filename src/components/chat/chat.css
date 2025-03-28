@@ -141,7 +141,7 @@
             border-radius: 10px;
             font-size: 16px;
 
-            &:disabled{
+            &:disabled {
                 cursor: not-allowed;
             }
         }
@@ -164,7 +164,7 @@
             border-radius: 5px;
             cursor: pointer;
 
-            &:disabled{
+            &:disabled {
                 background-color: #5182feb4;
                 cursor: not-allowed;
             }
